@@ -1,0 +1,59 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Accomplice - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"iFiles/Accomplice.res" /d "_DEBUG" "E:\tools\accomplice\source\Accomplice.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP41F2.TMP" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"iFiles/" /Fp"iFiles/Accomplice.pch" /Yu"stdafx.h" /Fo"iFiles/" /Fd"iFiles/" /FD /GZ /c 
+"E:\tools\accomplice\source\Accomplice.cpp"
+"E:\tools\accomplice\source\Art.cpp"
+"E:\tools\accomplice\source\Control.cpp"
+"E:\tools\accomplice\source\GenericDialog.cpp"
+"E:\tools\accomplice\source\MainDialog.cpp"
+"E:\tools\accomplice\source\MapNav.cpp"
+"E:\tools\accomplice\source\Options.cpp"
+"E:\tools\accomplice\source\PreviewList.cpp"
+"E:\tools\accomplice\source\Prompt.cpp"
+"E:\tools\accomplice\source\Splash.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP41F2.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP41F3.TMP" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"iFiles/" /Fp"iFiles/Accomplice.pch" /Yc"stdafx.h" /Fo"iFiles/" /Fd"iFiles/" /FD /GZ /c 
+"E:\tools\accomplice\source\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP41F3.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP41F4.TMP" with contents
+[
+UtilLib.lib /nologo /subsystem:windows /incremental:yes /pdb:"./Accomplice.pdb" /debug /machine:I386 /out:"./Accomplice.exe" /pdbtype:sept 
+.\iFiles\Accomplice.obj
+.\iFiles\Art.obj
+.\iFiles\Control.obj
+.\iFiles\GenericDialog.obj
+.\iFiles\MainDialog.obj
+.\iFiles\MapNav.obj
+.\iFiles\Options.obj
+.\iFiles\PreviewList.obj
+.\iFiles\Prompt.obj
+.\iFiles\Splash.obj
+.\iFiles\StdAfx.obj
+.\iFiles\Accomplice.res
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP41F4.TMP"
+<h3>Output Window</h3>
+Compiling resources...
+E:\tools\accomplice\source\Accomplice.rc(10) : fatal error RC1015: cannot open include file 'afxres.h'.
+Error executing rc.exe.
+
+
+
+<h3>Results</h3>
+Accomplice.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

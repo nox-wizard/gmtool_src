@@ -1,0 +1,610 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="Author" content="Bryan Zippy Pass">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>Accomplice Documents</title>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#3333FF"
+vlink="#FF0000" alink="#999900">
+
+<p align="center"><font size="5"><b><i>Accomplice: Your Partner
+in Crime</i></b></font> </p>
+
+<p><a name="top"></a> <br>
+<font size="1">This document last updated: 11/28/2001</font> <br>
+<b>Table of Contents:</b> <br>
+1. <a href="#intro">Introduction</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -<a href="#hist">History</a>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -<a href="#purpose">Purpose</a>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -<a href="#team">Team</a>
+</p>
+
+<p>2. <a href="#options">Options Dialog information</a> </p>
+
+<p>3. <a href="#scripts">The Scripts</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -<a href="#files">Files</a>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -<a href="#fmt">Formats</a>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-<a href="#global">Global Tags</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-<a href="#tab">Tab</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-<a href="#button">Button</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-<a href="#label">Label</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-<a href="#frame">Frame</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-<a href="#listbox">List Box</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-<a href="#lst">*.lst</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-<a href="#dlg">*.dlg</a> </p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-<a href="#batch">Batch Commands</a> </p>
+
+<p align="center">4. <a href="#issues">Known Issues</a> <br>
+5. <a href="#revision">Revision History</a> <br>
+6. <a href="#otherinfo">Other Information</a> </p>
+
+<p align="center"><a name="intro"></a> <br>
+<font size="4"><b><u>1. Introduction</u></b></font> <br>
+<a href="#top"><font size="1">^Top^</font></a> </p>
+
+<p>Welcome to Accomplice v2.0 &quot;Your Partner in
+Crime.&quot;&nbsp; Accomplice is a fully feature, fully
+scriptable Game Master tool for Ultima Online Emulators.&nbsp;
+While originally designed for UOX3, Accomplice's unique scripting
+flexibility allows scripts to be created and tailored to the
+needs of any emulator. </p>
+
+<p><a name="history"></a> <br>
+Accomplice 1.0 was first created in July, 2000 as a UOX only GM
+tool.&nbsp; This tool premered a format similar to that of the
+UOX classic &quot;CGMT.&quot;&nbsp; Accomplice only had one
+original version, consisting of most commands for UOX.&nbsp;
+Despite positive encouragment, the tool was never updated for
+lack of Developer interest (I get bored easily). </p>
+
+<p><a name="purpose"></a> <br>
+Accomplice 2.0 was created to follow the same general verticle
+tab layout of Accomplice 1, this however is where the
+similarities end.&nbsp; Accomplice 2.0 possess an extreme
+flexible (yet at times complex) script engine.&nbsp; This engine
+impliments a grid system to allow the &quot;scripter&quot; to
+easily create buttons that align correctly with each other to
+allow for a smooth interface through the script.&nbsp; The system
+allows users to create a (basically) unlimited number of tabs,
+buttons, labels, frames, and even listboxes to provide extend
+functionality. </p>
+
+<p align="center"><a name="team"></a> <br>
+The Accomplice Team currently consists of: <br>
+&quot;Zippy&quot;&nbsp; : Lead (Only) Developer <br>
+&quot;Sephiroth&quot;&nbsp; : Scripter <br>
+&quot;Alkiser&quot; : Webmaster </p>
+
+<p align="center"><a name="options"></a> <br>
+<font size="4"><b><u>2. Options Dialog Information</u></b></font>
+<br>
+<a href="#top"><font size="1">^Top^</font></a> </p>
+
+<p>These values are stored in accomplice.ini along with other
+user specific information. </p>
+
+<p>Command Prefix: The SINGLE character to be placed in front of
+all commands entered into the&nbsp; client.&nbsp; Do not include
+this in script files. </p>
+
+<p>Always On Top: HIGHLY recommended.&nbsp; Places Accomplice as
+the top most window,&nbsp; always visible in front of the UO
+client.&nbsp; Makes the tool very easy to access. </p>
+
+<p>Link to UO: Also Recommended; This links Accomplice to your UO
+Client window,&nbsp; automatically minimizing and maximizing
+Accomplice with the client, keeping it out of the&nbsp; way when
+you minimize your client to do other things (like chat, or update
+your&nbsp; Accomplice Script) </p>
+
+<p align="center">Prefix Hex: This prefixes hex numbers in
+commands with &quot;0x&quot;.&nbsp; This is provided for
+compliance&nbsp; with UOX version 0.95 and up, and is REQUIRED
+for those users.&nbsp; (NOTE: Some&nbsp; *.lst files require hex
+values to be &quot;hardcoded\&quot; into them.&nbsp; This is
+because multipul&nbsp; parameters in an lst if are treated as
+STRINGS and are not modified before being sent&nbsp; to the
+client.) </p>
+
+<p align="center"><a name="scripts"></a> <br>
+<font size="4"><b><u>3. The Scripts</u></b></font> <br>
+<a href="#top"><font size="1">^Top^</font></a> <br>
+<a name="files"></a> <br>
+<b><i>Files:</i></b> <br>
+<a href="#top"><font size="1">^Top^</font></a></p> Accomplice.exe :
+Accomplice program file. <br>
+UtilLib.dll&nbsp; : The Accomplice Utility Library. <br>
+Accomplice.ini&nbsp; : Accomplice options file.&nbsp; Contains
+information saved by accomplice&nbsp;&nbsp;&nbsp;&nbsp; (Such as
+information from the options dialog) Do not
+include&nbsp;&nbsp;&nbsp;&nbsp; this file with your script, it is
+automatically created by&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+accomplice.) <br>
+Accomplice.cfg&nbsp; : The script file.&nbsp; Contains all Tab,
+Button, Label, and Frame info. This&nbsp;&nbsp;&nbsp;&nbsp; is
+the heart of your script. <br>
+*.lst&nbsp;&nbsp; : Listbox list file. Contains extended data use
+to create listbox menus. </p>
+
+<p align="center"><a name="fmt"></a> <br>
+<a href="#top"><font size="1">^Top^</font></a></p> <br>
+Accomplice.cfg File Format: <br>
+tag=parameter1,parameter2,optional <br>
+(All strings require quotations unless otherwise specified, all
+numbers are decimal.) </p>
+
+<p align="center"><a name="global"></a> <br>
+<b><i>Global Tags:</i></b> <br>
+<a href="#top"><font size="1">^Top^</font></a></p> </p>
+
+<table border="0" width="100%">
+    <tr>
+        <td>rows=X</td>
+        <td>Grid definition; size of each row on the
+        dialog.&nbsp;</td>
+    </tr>
+    <tr>
+        <td>columns=Y</td>
+        <td>Grid definition; size of each column</td>
+    </tr>
+    <tr>
+        <td>hspace=X</td>
+        <td>Grid definition; padding around controls&nbsp;</td>
+    </tr>
+    <tr>
+        <td>vspace=Y</td>
+        <td>Grid definition; padding around controls&nbsp;</td>
+    </tr>
+    <tr>
+        <td>xsize=X</td>
+        <td>Width of Accomplice Dialog (156 default)</td>
+    </tr>
+    <tr>
+        <td>ysize=Y</td>
+        <td>Height of Accomplice Dialog (439 default)&nbsp;</td>
+    </tr>
+    <tr>
+        <td>FontFace=S</td>
+        <td>Font to use for controls; (MS Sans Serif default)
+        (String - NO QUOTATIONS) This does NOT effect the Help
+        Tab.</td>
+    </tr>
+    <tr>
+        <td>FontSize=X</td>
+        <td>Size of Font (8 Default)&nbsp;</td>
+    </tr>
+    <tr>
+        <td>name=S</td>
+        <td>Name of script file (String - NO QUOTATIONS)</td>
+    </tr>
+    <tr>
+        <td>creator=S</td>
+        <td>Name of creator(s) of this script file (String - NO
+        QUOTATIONS)</td>
+    </tr>
+    <tr>
+        <td>version=S</td>
+        <td>Version Number of this scriptfile (String - NO
+        QUOTATIONS)&nbsp;</td>
+    </tr>
+    <tr>
+        <td>desc=S</td>
+        <td>Short script description (String - NO QUOTATIONS)</td>
+    </tr>
+</table>
+
+<p align="center"><a name="tab"></a> <br>
+<b><i>Tabs:</i></b> <br>
+<a href="#top"><font size="1">^Top^</font></a></p> [Tab Name] : []
+indcates the begining of a tab, and the name to be displayed. (NO
+QUOTATIONS) <br>
+The help tab is hard coded, and will not be modified by anything
+in the script files (other than the script information tags.) <br>
+The help tab will always apear as the last tab. </p>
+
+<p align="center"><a name="button"></a> <br>
+<b><i>Buttons:</i></b> <br>
+<a href="#top"><font size="1">^Top^</font></a></p>
+Button=x1,y1,xsize,ysize,&quot;Text label&quot;,&quot;Command or
+DLG File&quot;,PARAMETERFORMAT,<i>&quot;LINK&quot;</i>,<i>&quot;Prompt
+Message&quot;</i> </p>
+
+<p><b>PARAMETERFORMAT:</b> <br>
+(Any number of the following values) <br>
+N - No parameters for this command <br>
+M - Open the Map Navigator <br>
+D - Decimal Parameter <br>
+H - Hex parameter <br>
+W - Open Dialog file. MUST BE ONLY PARAMETER <br>
+B - Execute the <a href="#batch">Batch File</a> pointer to by command
+S - String parameter (String must be the LAST parameter, and can
+have no more than 4 number parameters before it) </p>
+
+<p><b>LINK:</b> <br>
+PROMPT - Indicates Accomplice should prompt the user for the
+value(s) <br>
+&quot;LinkName&quot; - indicates the button's value is linked to
+Listbox &quot;LinkName&quot; </p>
+
+<p><b>Example:</b> <br>
+Button=1,1,30,1,&quot;Who's Online?&quot;,&quot;who&quot;,N <br>
+Button=1,1,30,1,&quot;Goto
+Character&quot;,&quot;gochar&quot;,HHHH,PROMPT,&quot;Enter 4 part
+serial number:&quot; <br>
+Button=1,1,30,1,"Execute Command List","commandlist.batch",B
+Button=1,1,30,1,&quot;Add this
+item&quot;,&quot;additem&quot;,D,&quot;ItemList&quot; <br>
+Button=1,1,30,1,&quot;Open Charater Dialog
+Box&quot;,&quot;chars.dlg&quot;,W </p>
+
+<p align="center"><b>Map Navigator:</b> The map navigator works
+like this: Button=1,1,30,1,&quot;Open
+MapNav&quot;,&quot;go&quot;,M,&quot;1000 1000&quot; That line
+will open the Map Navigator and center the map on 1000,1000. When
+the user selects &quot;send to client&quot; a 'go command will be
+sent. Button=1,1,30,1,&quot;MoreXYZ
+MapNav&quot;,&quot;setmorexyz&quot;,M That line will open the Map
+Navigator and center the map on 0,0 or the last place it was
+centered. When the user selects &quot;send to client&quot; a
+'setmorexyz command will be sent. </p>
+
+<p align="center"><a name="label"></a> <br>
+<b><i>Labels:</i></b> <br>
+<a href="#top"><font size="1">^Top^</font></a></p>
+Label=x1,y1,xsize,ysize,&quot;Text to display&quot; </p>
+
+<p align="center"><b>Example:</b> <br>
+Label=1,1,25,1,&quot;Welcome to Accomplice&quot; </p>
+
+<p align="center"><a name="frame"></a> <br>
+<b><i>Frames:</i></b> <br>
+<a href="#top"><font size="1">^Top^</font></a></p>
+Frame=x1,y1,xsize,ysize,&quot;Text to display&quot; </p>
+
+<p align="center"><b>Example:</b> <br>
+Frame=1,1,40,40,&quot;Add Items&quot; </p>
+
+<p align="center"><a name="listbox"></a> <br>
+<b><i>Listboxes:</i></b> <br>
+<a href="#top"><font size="1">^Top^</font></a></p>
+Listbox=x1,y1,xsize,ysize,&quot;InternalName&quot;,&quot;filename.lst&quot;
+</p>
+
+<p>A listbox is &quot;linked&quot; to a <a href="#button">Button</a>,
+and reads values from an *.lst file. </p>
+
+<p>Internal Name is used to link this listbox to a Button.&nbsp;
+File name is a listbox menu file (*.lst) </p>
+
+<p align="center"><b>Example:</b> <br>
+Listbox=1,1,33,20,&quot;ItemList&quot;,&quot;items.lst&quot; </p>
+
+<p align="center"><a name="lst"></a> <br>
+<b><i>*.lst Files:</i></b> <br>
+<a href="#top"><font size="1">^Top^</font></a></p> Lst files are used
+to store menu data for listboxes. <br>
+These files are RARELY created by you, instead use a program like
+dfn2lst, or scp2lst. (Made by Zippy; Source code avalible) </p>
+
+<p><b>Optional Format Tag:</b> <br>
+format=FORMATPARAMETERS<i>,Prompt</i> <br>
+Use this tag if you wish to prompt users for other values in
+addition to the value obtained from the listbox.&nbsp; This is
+useful for such things as a UOX 'set command.&nbsp; The listbox
+would contain a list of skills, and then prompt the user for the
+value to set.&nbsp; You may prompt for upto 8 values, or upto 4
+values and a string value.&nbsp; The string value must be LAST,
+and the listbox value will always be FIRST.&nbsp; This format tag
+and prompt is IDENTICAL to the one used with <a href="#button">Buttons</a>.&nbsp;
+If no format tag is supplied, the format will be taken from the
+one supplied with the button, and the user will not be prompted
+for any additional values. </p>
+
+<p><b>Example:</b> <br>
+format=SD,&quot;Enter other DECIMAL value:&quot; <br>
+In this exmaple, the value from the listbox is treated as a
+string, and the user is prompted for an additional value. </p>
+
+<p>format=DDHDS,&quot;Enter a decimal, hex, decimal and
+string:&quot; <br>
+This exmaple will prompt the user for 3 numbers and a string in
+addition to the listbox value.&nbsp; The middle value is hex. <br>
+The ID tags are optional, and will display the specified entry
+from the user's art.mul file <br>
+For a list entry the script would be <br>
+<i>Add the first item=1=003A</i> <br>
+This will display a wall in the background when a user highlights
+&quot;add the first item&quot; <br>
+Menus can also have an ID specified. To do this add
+&quot;ID=003A&quot; to the { on the menu. </p>
+
+<p>Menu Name <br>
+{[ID=0000] <br>
+Sub menu 1 <br>
+{ <br>
+name tag=VALUE <br>
+Sub Menu <br>
+{ <br>
+name tag=VALUE[=0000] <br>
+} <br>
+} <br>
+} <br>
+name tag=VALUE </p>
+
+<p><b>Sub Menus:</b> <br>
+are defined by simply placing a name followed by a { }
+pair.&nbsp; There is no physical limit to number of submenus, but
+let's keep it realistic. </p>
+
+<p><b>name tags:</b> <br>
+NO QUOTATIONS <br>
+May be as long as you like (be realistic) followed by = and then
+a SINGLE value.&nbsp; If you wish to have more than one value, it
+must be linked to a string parameter in it's button. </p>
+
+<p>Menus are displayed in the listbox with a &gt; in front of
+them showing they are menus and NOT values.&nbsp; This &gt; is
+added for you, and you should not include it in the lst file. </p>
+
+<p align="center">Sub menus all have a &lt; Back as their first
+entry so the user my return to the previous menu selection. </p>
+
+<p align="center"><a name="dlg"></a> <br>
+<b><i>*.dlg Files:</i></b> <br>
+<a href="#top"><font size="1">^Top^</font></a></p>
+<p><b>*.dlg</b> files
+contain information used to build a second popup dialog box over
+top of Accomplice.&nbsp; This box is usually used for a
+&quot;Wizard&quot; type of interface for creating something that
+uses multipul steps.&nbsp; For example, a spawner dialog could be
+created, which requires the user to add a spawn item, set it's
+type, and set it's morexyz values. (In UOX that is...) </p>
+
+<p>A dlg files is used in conjunction with a Button.&nbsp; Supply
+the FORMATPARAMETER W in the button's format parameter list, and
+supply the dlg file name instead of a command. <br>
+&nbsp; <br>
+&nbsp; </p>
+
+<table border="0" width="100%">
+    <tr>
+        <td>title=S</td>
+        <td>Title to be displayed in title bar of this Dialog.
+        (NO QUOTATIONS)</td>
+    </tr>
+    <tr>
+        <td>rows=X</td>
+        <td>Grid definition; size of each row on the
+        dialog.&nbsp;</td>
+    </tr>
+    <tr>
+        <td>columns=Y</td>
+        <td>Grid definition; size of each column</td>
+    </tr>
+    <tr>
+        <td>hspace=X</td>
+        <td>Grid definition; padding around controls&nbsp;</td>
+    </tr>
+    <tr>
+        <td>vspace=Y</td>
+        <td>Grid definition; padding around controls&nbsp;</td>
+    </tr>
+    <tr>
+        <td>xsize=X</td>
+        <td>Width of Dialog (200 default)</td>
+    </tr>
+    <tr>
+        <td>ysize=Y</td>
+        <td>Height of Dialog (100 default)&nbsp;</td>
+    </tr>
+</table>
+
+<p align="center">Controls on a dialog box work exactly the same
+as controls on a Tab.&nbsp; The only difference is you may NOT
+open a dialog box from within a dialog box. <br>
+&nbsp; <br>
+&nbsp; <br>
+<br>
+</p>
+<p align="center"><a name="batch"></a> <br>
+<b><i>Batch Files:</i></b> <br>
+<a href="#top"><font size="1">^Top^</font></a></p>
+<p>
+Batch files execute a group of commands in sequence.  Batch commands work the same as Buttons (they do not need a name or position) except they cannot open dialogs or the Map Navigator. Note that a batch file can even reference listboxes on the same tab of dialog as the button the batch is linked to.<p>
+"command_to_send",PARAMETERLIST,<i>&quot;LINK&quot;</i>,<i>&quot;Prompt Message&quot;</i><br>
+WAIT<i>="Optional message to show to use"</i> This option asks the user to press yes to continue executing the batch, or No to stop, and displays additional messages if they are supplied in the script.  THis is useful when a batch needs to wait for a user to target soemthing before continuing.<p>
+
+<p align="center"><a name="issues"></a> <br>
+<font size="4"><b><u>4. Known Issues</u></b></font> <br>
+<a href="#top"><font size="1">^Top^</font></a> </p>
+
+<p>Multipul UO Windows:&nbsp; Some programs (such as UOGateway)
+modify the client so it can run more&nbsp; than one copy at
+once.&nbsp; This may confuse Accomplice, and commands may appear
+in&nbsp; the wrong window, or not at all.&nbsp; FOR DEVELOPERS:
+Accomplice sends the&nbsp; command to the top msot window that
+has the window class &quot;Ultima Online&quot;.&nbsp; If
+your&nbsp; program modifies the window class, Accomplice will not
+be able to send it commands. </p>
+
+<p>Script Reloading: Might occationally crash Accomplice.&nbsp;
+This is provided mainly for script&nbsp; testing purposes, and
+users should avoid using this command. </p>
+
+<p align="center">Link2UO: May OCCATIONALLY cause problems, such
+as not reactivating the Accomplice window properly.&nbsp; This
+should be completely fixed as of 2.0b6 </p>
+
+<p align="center"><a name="revision"></a> <br>
+<font size="4"><b><u>5. Revision History</u></b></font> <br>
+<a href="#top"><font size="1">^Top^</font></a> </p>
+<div align="center"><center>
+
+<table border="1">
+    <tr>
+        <td>Version</td>
+        <td>Date</td>
+        <td>Description</td>
+    </tr>
+    <tr>
+        <td>1.0</td>
+        <td>July, 2000</td>
+        <td>Initial Accomplice Version. The one that started it
+        all....</td>
+    </tr>
+    <tr>
+        <td>2.0b1</td>
+        <td>Sept 19, 2001</td>
+        <td>Complete rewrite.&nbsp; Buttons and Labels added.</td>
+    </tr>
+    <tr>
+        <td>2.0b2</td>
+        <td>Sept 20, 2001</td>
+        <td>Frames and Listboxes Added</td>
+    </tr>
+    <tr>
+        <td>2.0b3</td>
+        <td>Sept 21, 2001</td>
+        <td>Listboxes extended. Help Tab added.</td>
+    </tr>
+    <tr>
+        <td>2.0b4</td>
+        <td>Sept 23, 2001</td>
+        <td>Options dialog added.</td>
+    </tr>
+    <tr>
+        <td>2.0b5</td>
+        <td>Sept 24, 2001</td>
+        <td>String can now be preceeded by up to 4 numbers, other
+        general fixes</td>
+    </tr>
+    <tr>
+        <td>2.0b6</td>
+        <td>Sept 25, 2001</td>
+        <td>Many many crash fixes.&nbsp; Many warnings added for
+        in correct values in script files.&nbsp;</td>
+    </tr>
+    <tr>
+        <td>2.0b7</td>
+        <td>Sept 27, 2001</td>
+        <td>Dialog boxes added through use of *.dlg files.&nbsp;
+        Link2UO option greatly improved and expanded.&nbsp;
+        Accomplice will only act &quot;Always on Top&quot; when
+        the UO window has focus, otherwise Accomplice will act as
+        any other window, going to the background or minimizing
+        when UO does.&nbsp; It's reocmmended that you not turn
+        off always on top when using Link2UO.</td>
+    </tr>
+    <tr>
+        <td>2.0b8</td>
+        <td>Sept 28, 2001</td>
+        <td>General Bugfixes. Listbox functionality
+        improved.&nbsp; Listboxes now have an (optional) format
+        parameter in their file allowing the script prompt the
+        user for values that will FOLLOW the value obtained from
+        the list file.&nbsp; See the <a href="#lst">*.lst</a>
+        format for more information.</td>
+    </tr>
+    <tr>
+        <td>2.0b9</td>
+        <td>Sept 30, 2001</td>
+        <td>General fixes. Help tab no longer uses custom font.
+        Dialogs not center themselves on the Accomplice window,
+        near the cursor. Corrected MINOR problems with Link2UO.</td>
+    </tr>
+    <tr>
+        <td>2.00.01</td>
+        <td>October 1, 2001</td>
+        <td>Initial public release.</td>
+    </tr>
+    <tr>
+        <td>2.00.02</td>
+        <td>October 3, 2001</td>
+        <td>General bug fixes.</td>
+    </tr>
+    <tr>
+        <td>2.00.03</td>
+        <td>October 8, 2001</td>
+        <td>Prefix support for 2 characters added for UO3D
+        people. HORIZONTAL=TRUE now at the top of Accomplice.cfg
+        will make the <b>tab control</b> Horizontal. it's up to
+        you to script everything else. THERE IS NO HELP TAB ON
+        HORIZONTAL ACCOMPLICE (because i'm lazy).</td>
+    </tr>
+    <tr>
+        <td>2.00.04</td>
+        <td>October 16, 2001</td>
+        <td>Source released under GNU.<br>
+        *Small* script fixes and a MAJOR fix for lst files where
+        the last item on sub menus was no avalible. I'm ashamed
+        of all of you for waiting so long to tell me. Really.</td>
+    </tr>
+    <tr>
+        <td>2.<b>1</b>.00</td>
+        <td>November 8, 2001</td>
+        <td>Added Item Preview to listboxes and *.lst files.
+        Added mapX.mul Navigator. Despite this small entry, these are
+        in fact big changes. So this is version 2.1.00 instead of
+        2.0.05</td>
+    </tr>
+    <tr>
+        <td>2.1.01</td>
+        <td>November 27, 2001</td>
+        <td>Fixed crash and display problems with WinXP/2k.<br> Added a few
+        try/catches to track other possible crashes (although
+        none have been reported).<br>Added progress bar to splash screen.</td>
+    </tr>
+	<tr>
+        <td>2.1.02</td>
+        <td>December XX, 2001</td>
+        <td>Added support for batch files.  Works basically like a list of command buttons.  See the new Batch section and additions to the button section.</td>
+    </tr>
+</table>
+</center></div>
+
+<p align="center"><a name="otherinfo"></a> <br>
+<font size="4"><b><u>6. Other Information</u></b></font> <br>
+<a href="#top"><font size="1">^Top^</font></a> </p>
+
+<p>Check for Accomplice updates, scripts, and forums at
+http://accomplice.uoxdev.com/ </p>
+
+<p>The Accomplice Source Code has been released under the GNU
+public licence, and is avalible at the <a href="http://accomplice.uoxdev.com/">Accomplice Website</a>.</p>
+
+<p>Accomplice Program, Libraries, File formats Copyright 2001
+Bryan &quot;Zippy&quot; Pass. All rights reserved. <br>
+Accomplice web page, Icons, Bitmaps Copyright 2001 Casey
+&quot;Alkiser&quot; McAdams. All rights reserved. </p>
+
+<p>&quot;Ultima Online&quot; is a copyright of Origin Systems,
+Inc. and Electrionic Arts. </p>
+
+<p>Much of the art associated with Accomplice was originally
+taken from screen shots of Ultima Online.&nbsp; These images are
+Copyright Origin Systems, Inc/Electronic Arts. </p>
+
+<p>This program may be freely distributed, please include this
+file. <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; </p>
+</body>
+</html>

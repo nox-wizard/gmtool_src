@@ -1,0 +1,212 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP  DISCARDABLE     "logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SPLASH DIALOG DISCARDABLE  0, 0, 133, 192
+STYLE DS_CENTER | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         101,IDC_STATIC,"Static",SS_BITMAP,0,0,133,184
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,1,185,131,6
+END
+
+IDD_ACCOMPLICE DIALOG DISCARDABLE  0, 0, 100, 255
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Accomplice"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",TCS_VERTICAL,0,0,12,255
+    PUSHBUTTON      "&Options",IDC_OPTIONS,15,3,81,12,NOT WS_VISIBLE
+    GROUPBOX        "About Accomplice",IDC_INFO,15,18,81,117,NOT WS_VISIBLE
+    CTEXT           "Version: 2.1.01",IDC_INF1,19,27,73,9,SS_SUNKEN | NOT 
+                    WS_VISIBLE
+    LTEXT           "Accomplice code, engine, icons and dialogs Copyright 2001 Bryan ""Zippy"" Pass and the Accomplice Team - All Rights Reserved.",
+                    IDC_INF2,19,40,73,57,NOT WS_VISIBLE
+    LTEXT           "Accomplice Team:\nZippy - Lead Dev\nSephiroth - Scripter\nAlkiser - Web Master",
+                    IDC_INF3,19,99,71,33,NOT WS_VISIBLE
+    GROUPBOX        "About this Script",IDC_INFO2,15,138,81,114,NOT 
+                    WS_VISIBLE
+    LTEXT           "Script Specific information.",IDC_SCPINFO,19,162,72,84,
+                    NOT WS_VISIBLE
+    PUSHBUTTON      "&Reload Script",IDC_RELOAD,21,147,69,12,NOT WS_VISIBLE
+END
+
+IDD_PROMPT DIALOGEX 0, 0, 82, 70
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Input Required"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Okay",IDOK,6,53,33,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,42,53,33,14
+    LTEXT           "Enter value(s):",IDC_PROMPT,1,0,77,17
+    EDITTEXT        IDC_EDIT1,1,21,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,22,21,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,42,21,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,62,21,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,1,36,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,22,36,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,42,36,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,62,36,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STRING,1,36,78,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+END
+
+IDD_OPTIONS DIALOG DISCARDABLE  0, 0, 112, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Accomplice Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Okay",IDOK,3,69,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,58,69,50,14
+    CONTROL         "Always on Top",IDC_TOP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,3,17,105,9
+    LTEXT           "Command Prefix:",IDC_STATIC,3,3,54,9
+    EDITTEXT        IDC_PREFIX,58,1,18,12,ES_AUTOHSCROLL
+    CONTROL         "Link to UO Client",IDC_LINK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,3,27,105,9
+    CONTROL         "Prefix hex numbers with ""0x""",IDC_HEX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,3,37,105,9
+END
+
+IDD_GENERIC DIALOGEX 0, 0, 235, 153
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTER | 
+    DS_CENTERMOUSE | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Generic Extra Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SPLASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 126
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+
+    IDD_ACCOMPLICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 87
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 247
+    END
+
+    IDD_PROMPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 75
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 105
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_GENERIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ACCOMPLICE          ICON    DISCARDABLE     "accomplice.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
